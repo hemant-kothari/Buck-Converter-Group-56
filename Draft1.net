@@ -1,0 +1,16 @@
+* C:\Users\Hemant Kothari\Downloads\Draft1.asc
+R1 N003 0 1.16
+C1 N003 0 22µ
+D1 0 N002 1N5819
+L1 N002 N003 30.9µ
+M1 N001 N004 N002 N002 IPF050N03L
+V1 N001 0 24
+V2 N004 N002 PULSE(0 12 0 1e-9 1e-9 4.16e-6 20e-6)
+.model D D
+.lib C:\Users\Hemant Kothari\AppData\Local\LTspice\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\Hemant Kothari\AppData\Local\LTspice\lib\cmp\standard.mos
+.tran 0 5m 0 1u
+.backanno
+.end
